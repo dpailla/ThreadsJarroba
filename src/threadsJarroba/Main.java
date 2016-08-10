@@ -13,7 +13,7 @@ public class Main {
 
 		Cajera cajero1 = new Cajera("Cajera 1");
 		Cajera cajero2 = new Cajera("Cajera 2");
-		Cajera cajero3 = new Cajera("Cajera 3");
+
 
 
 		// Tiempo inicial de referencia
@@ -21,6 +21,6 @@ public class Main {
 
 		cajero1.procesarCompra(cliente1, initialTime);
 		cajero2.procesarCompra(cliente2, initialTime);
-		cajero3.procesarCompra(cliente2, initialTime);
+
 	}
 }
