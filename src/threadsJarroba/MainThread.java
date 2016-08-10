@@ -16,7 +16,7 @@ public class MainThread {
 		CajeraThread cajera1 = new CajeraThread("Cajera 1", cliente1, initialTime);
 		CajeraThread cajera2 = new CajeraThread("Cajera 2", cliente2, initialTime);
 
-		cajera1.start();
 		cajera2.start();
+		cajera1.start();
 	}
 }

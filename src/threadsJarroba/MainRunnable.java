@@ -32,7 +32,6 @@ public class MainRunnable implements Runnable{
 		
 		new Thread(proceso1).start();
 		new Thread(proceso2).start();
-
 	}
 
 	@Override

@@ -8,16 +8,19 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Cliente cliente1 = new Cliente("Cliente 1", new int[] { 2, 2, 1, 5, 2, 3 });
-		Cliente cliente2 = new Cliente("Cliente 2", new int[] { 1, 3, 5, 1, 1 });
+		Cliente cliente1 = new Cliente("Cliente 1", new int[] { 2, 2, 1, 5 });
+		Cliente cliente2 = new Cliente("Cliente 2", new int[] { 1, 3, 1 });
 
-		Cajera cajera1 = new Cajera("Cajera 1");
-		Cajera cajera2 = new Cajera("Cajera 2");
+		Cajera cajero1 = new Cajera("Cajera 1");
+		Cajera cajero2 = new Cajera("Cajera 2");
+		Cajera cajero3 = new Cajera("Cajera 3");
+
 
 		// Tiempo inicial de referencia
 		long initialTime = System.currentTimeMillis();
 
-		cajera1.procesarCompra(cliente1, initialTime);
-		cajera2.procesarCompra(cliente2, initialTime);
+		cajero1.procesarCompra(cliente1, initialTime);
+		cajero2.procesarCompra(cliente2, initialTime);
+		cajero3.procesarCompra(cliente2, initialTime);
 	}
 }
